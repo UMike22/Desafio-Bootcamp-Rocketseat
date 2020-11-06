@@ -1,5 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
 //                           Cálculo de IMC
 
 // Crie um programa para calcular o IMC e nível de obesidade de uma pessoa.
