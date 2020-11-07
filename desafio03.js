@@ -1,48 +1,47 @@
 const AlunosTurma1 = [
 {
    nome: 'Mikael',
-   nota1 : 10,
-   nota2: 5,
-   nota3: 8,
-   nota4:4,
-   nota5:10
+   nota : 10
 },
 {
     nome:'Eduardo',
-    nota1:5,
-    nota2:10,
-    nota3:9,
-    nota4:1,
-    nota5:0
+    nota:5
+},
+{
+    nome:'Didico',
+    nota:1
 }
 ]
+
 
 const AlunosTurma2 = [
     {
         nome: 'Felipe',
-        nota1 : 5,
-        nota2: 5,
-        nota3: 1,
-        nota4:4,
-        nota5:1
+        nota : 5
+    
      },
      {
          nome:'Venancio',
-         nota1:5,
-         nota2:10,
-         nota3:9,
-         nota4:1,
-         nota5:0
+         nota:5
+     },
+     {
+         nome:'Vagner',
+         nota: 10
      }
 ]
 
 
 
 function CalcMedia(Alunos){
-  return   (Alunos.nota1 + Alunos.nota2 + Alunos.nota3 + Alunos.nota4 + Alunos.nota5)/5
+  let soma = 0
+  for(let i=0;i<Alunos.length;i++){
+    soma = soma + Alunos[i].nota
 }
- const media1 = CalcMedia(AlunosTurma1[0])
- const media2 = CalcMedia(AlunosTurma2[0])
+    const media = soma/Alunos.length
+    return media
+}
+ const media1 = CalcMedia(AlunosTurma1)
+ const media2 = CalcMedia(AlunosTurma2)
  
 
 
@@ -51,8 +50,9 @@ function CalcMedia(Alunos){
          console.log(`A media da ${turma} foi de ${media} você passou de ano!`)
      }
      else {
-         console.log(`A media da ${turma} foi de ${media} Você foi reprovado.`)
+       //  console.log(`A media da ${turma} foi de ${media} Você foi reprovado.`)
      }
  }
 
- SePassou(media2,'Turma 1')
+ SePassou(media1,'Turma 1')
+ SePassou(media2,'Turma 2')
