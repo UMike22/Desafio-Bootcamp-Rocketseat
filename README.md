@@ -1,2 +1,2 @@
 # Desafio-Bootcamp-Rocketseat
-Desafio 01 do bootcamp launch base da rocketseat
+Desafios do bootcamp launch base da rocketseat 2.0
