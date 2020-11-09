@@ -1,0 +1,24 @@
+body{
+    background-color: #282a36 ;
+}
+header{
+    background-color:rgba(0,0,0,0.1);
+    padding: 30px;
+    border-bottom:1px solid #333;
+}
+  header div{
+    text-align: center;
+}
+header div a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: color 200ms ease-in;
+}
+
+header div a:hover{
+    color: black;
+}
