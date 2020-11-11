@@ -2,13 +2,14 @@ body{
     background-color: #282a36 ;
     font-family: 'Roboto', sans-serif;
     color: aliceblue;
+    font-weight: bold;
 }
 h1{
     font-size: 48px;
     line-height: 58px;
     padding: 20px 0;
     text-align: center;
-    font-weight: bold;
+    
 
 }
 header{
