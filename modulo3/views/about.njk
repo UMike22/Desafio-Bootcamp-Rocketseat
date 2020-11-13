@@ -1,14 +1,26 @@
 {% extends "layout.njk" %}
-    {%block head %}
-        <title>About</title>
-    {% endblock %}
+{%block head %}
+    <title>About</title>
+{% endblock %}
 {% block content %}
 
-
     <section class="wrapper">
-        <h1>Mikael Vieira</h1>
-        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGIv2bPG0KKQA/profile-displayphoto-shrink_400_400/0?e=1610582400&v=beta&t=SwQVr9Fbs9ZHro_fuiUfMnSBuq0iJYH9ta8X_FvGyMk" alt="Foto Mikael">
-        <p>Estudante dedicado com 2 anos de estudos nas tecnologias web, disposto a somar. Faço faculdade de Análise e Desenvolvimento de Sistemas. Estudo pra ser um full-stack dando relevância tanto para o front-end como para o back-end.</p>
+        <h1>{{about.name}}</h1>
+        <img src="{{about.avatar}}" alt="Foto {{about.name}}">
+        <p>{{about.description}}</p>
     </section>
-    
-{% endblock%}
+    <footer class="rodape-about">
+        <nav>
+            <ul class="rede-social">
+                {% for link in about.links%}
+                <li>
+                    <a class="{{link.class}}" href="{{link.url}}">{{ link.name }}</a>
+                </li>
+                
+                {% endfor%}
+            </ul>
+        </nav>
+        <p>&copy; 2020 <i>{{about.name}}</i><p>
+    </footer>
+
+    {% endblock%}

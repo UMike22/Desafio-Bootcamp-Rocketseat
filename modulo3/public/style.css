@@ -39,6 +39,8 @@ header nav a {
 header nav a:hover{
     color: black;
 }
+
+/* PAGINA SOBRE ================== PAGINA SOBRE=================== */
 .wrapper{
     margin: 0 auto;
     max-width: 300px;
@@ -56,8 +58,58 @@ header nav a:hover{
     line-height: 22px;
     font-weight: normal;
 }
-
-
+.rodape-about{
+    min-height: 100px;
+    background-color: #1c1d20;
+    position: relative;
+}
+.rodape-about p {
+    position: absolute;
+    color: #330faa;
+    font-weight: bold;
+    right: 5px;
+    top: 5px;
+}
+.rodape-about nav {
+    min-height: 100px;
+}
+.rede-social {
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    padding: 0 20px;
+    justify-items: center;
+    align-items: center;
+}
+.rede-social li {
+    padding: 0 10px;
+}
+.rede-social a {
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.linkedin {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/174/174857.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -99999px;
+}
+.instagram {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/220/220222.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -99999px;
+}
+.gmail {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/732/732200.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    text-indent: -99999px;
+}
 /* ============ SOBRE ===============*/
 
 .cards{
@@ -70,6 +122,8 @@ header nav a:hover{
 .card {
     background-color: #7159c1;
     transition: transform 200ms ease;
+    display: grid;
+    cursor: pointer;
 }
 .card:nth-child(odd):hover{
     transform: rotateZ(-5deg) scale(1.2)
@@ -87,6 +141,7 @@ header nav a:hover{
 .card__info{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 .card__price{
     background-color: #7159c1;
@@ -139,4 +194,18 @@ iframe {
     top: 8%;
     position: absolute;
     
+}
+
+
+/* FEATURED */
+.card__image-container{
+    position: relative;
+}
+.featured{
+    background-color: #e0d35c;
+    color: #282a36;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
 }
